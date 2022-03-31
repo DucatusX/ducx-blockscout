@@ -32,7 +32,7 @@ services:
         ETHEREUM_JSONRPC_HTTP_URL: '${DUCX_NODE_HTTP_URL}'
         ETHEREUM_JSONRPC_TRACE_URL: '${DUCX_NODE_HTTP_URL}'
         DATABASE_URL: postgresql://postgres:@db:5432/blockscout?ssl=false
-        ECTO_USE_SSL: false
+        ECTO_USE_SSL: 'false'
     ports:
       - 4000:4000
 
