@@ -1,4 +1,4 @@
-compose_file := docker-compose.ducx.yaml
+compose_file := docker-compose.ducx.yml
 compose := docker-compose -f $(compose_file)
 tail := 1000
 
