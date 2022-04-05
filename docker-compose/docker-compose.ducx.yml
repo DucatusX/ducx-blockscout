@@ -28,10 +28,10 @@ services:
     env_file:
       -  ./envs/common-blockscout.env
     environment:
-        ETHEREUM_JSONRPC_VARIANT: 'parity'
         ETHEREUM_JSONRPC_HTTP_URL: '${DUCX_NODE_HTTP_URL}'
         ETHEREUM_JSONRPC_TRACE_URL: '${DUCX_NODE_HTTP_URL}'
         SUBNETWORK: '${SUBNETWORK}'
+        SUPPORTED_CHAINS: '${SUPPORTED_CHAINS}'
         DATABASE_URL: postgresql://postgres:@db:5432/blockscout?ssl=false
         ECTO_USE_SSL: 'false'
     ports:
